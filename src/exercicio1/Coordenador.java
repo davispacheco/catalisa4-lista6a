@@ -1,2 +1,25 @@
-package src.exercicio1;public class Coordenador {
+package src.exercicio1;
+
+public class Coordenador extends Funcionario {
+    private int professoresSupervisionados;
+
+    public Coordenador() {
+        this.professoresSupervisionados = 0;
+    }
+
+    public int getProfessoresSupervisionados() {
+        return professoresSupervisionados;
+    }
+
+    public void setProfessoresSupervisionados(int professoresSupervisionados) {
+        this.professoresSupervisionados = professoresSupervisionados;
+    }
+
+    @Override
+    public void aumentoSalario() {
+        double percentual = 0.05;
+    }
+    public void adicionaProfessor() {
+        professoresSupervisionados ++;
+    }
 }

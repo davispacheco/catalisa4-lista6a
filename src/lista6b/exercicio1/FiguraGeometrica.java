@@ -1,8 +1,19 @@
 package src.lista6b.exercicio1;
 
 public abstract class FiguraGeometrica {
-public abstract double area() {
-    double areaFigura;
-    return areaFigura;
-}
+    private double areaFigura;
+
+    public FiguraGeometrica() {
+        this.areaFigura = areaFigura;
+    }
+
+    public double getAreaFigura() {
+        return areaFigura;
+    }
+
+    public void setAreaFigura(double areaFigura) {
+        this.areaFigura = areaFigura;
+    }
+
+    public abstract void area();
 }

@@ -19,7 +19,12 @@ public class Coordenador extends Funcionario {
     public void aumentoSalario() {
         double percentual = 0.05;
     }
+
     public void adicionaProfessor() {
-        professoresSupervisionados ++;
+        if (professoresSupervisionados == 10) {
+            System.out.println("Limite de professores supervisionados excedido.");
+        } else {
+            professoresSupervisionados++;
+        }
     }
 }

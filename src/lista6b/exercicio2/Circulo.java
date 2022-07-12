@@ -3,10 +3,12 @@ package src.lista6b.exercicio2;
 public class Circulo implements FiguraGeometrica {
     private double pi;
     private double raio;
+    private double areaCirculo;
 
     public Circulo() {
         this.pi = 3.14;
         this.raio = 0;
+        this.areaCirculo = 0;
     }
 
     public double getPi() {
@@ -25,8 +27,16 @@ public class Circulo implements FiguraGeometrica {
         this.raio = raio;
     }
 
+    public double getAreaCirculo() {
+        return areaCirculo;
+    }
+
+    public void setAreaCirculo(double areaCirculo) {
+        this.areaCirculo = areaCirculo;
+    }
+
     @Override
-    public void area() {
-        areaFigura = pi * raio * raio;
+    public void calculoArea() {
+        areaCirculo = pi * raio * raio;
     }
 }

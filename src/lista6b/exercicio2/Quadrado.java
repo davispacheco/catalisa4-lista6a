@@ -2,9 +2,11 @@ package src.lista6b.exercicio2;
 
 public class Quadrado implements FiguraGeometrica {
     private double ladoDoQuadrado;
+    private double areaQuadrado;
 
     public Quadrado() {
         this.ladoDoQuadrado = 0;
+        this.areaQuadrado = 0;
     }
 
     public double getLadoDoQuadrado() {
@@ -15,8 +17,16 @@ public class Quadrado implements FiguraGeometrica {
         this.ladoDoQuadrado = ladoDoQuadrado;
     }
 
+    public double getAreaQuadrado() {
+        return areaQuadrado;
+    }
+
+    public void setAreaQuadrado(double areaQuadrado) {
+        this.areaQuadrado = areaQuadrado;
+    }
+
     @Override
-    public void area() {
-areaFigura = ladoDoQuadrado * ladoDoQuadrado;
+    public void calculoArea() {
+        areaQuadrado = ladoDoQuadrado * ladoDoQuadrado;
     }
 }

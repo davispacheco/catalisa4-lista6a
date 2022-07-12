@@ -18,6 +18,8 @@ public class Coordenador extends Funcionario {
     @Override
     public void aumentoSalario() {
         double percentual = 0.05;
+        double reajuste = salario * percentual;
+        setSalario(getSalario() + reajuste);
     }
 
     public void adicionaProfessor() {

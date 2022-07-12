@@ -1,16 +1,18 @@
 package src.exercicio1;
 
 public class Professor extends Funcionario {
-private String nivelDeGraduacao;
-private String disciplinaMinistrada;
-private int quantidadeDeAlunos;
-private int quantidadeDeTurmas;
+    private String nivelDeGraduacao;
+    private String disciplinaMinistrada;
+    private int quantidadeDeAlunos;
+    private int quantidadeDeTurmas;
+    private Turma turma;
 
     public Professor() {
         this.nivelDeGraduacao = nivelDeGraduacao;
         this.disciplinaMinistrada = disciplinaMinistrada;
-        this.quantidadeDeAlunos = 0;
-        this.quantidadeDeTurmas = 0;
+        this.quantidadeDeAlunos = quantidadeDeAlunos;
+        this.quantidadeDeTurmas = quantidadeDeTurmas;
+        this.turma = turma;
     }
 
     public String getNivelDeGraduacao() {
@@ -44,7 +46,16 @@ private int quantidadeDeTurmas;
     public void setQuantidadeDeTurmas(int quantidadeDeTurmas) {
         this.quantidadeDeTurmas = quantidadeDeTurmas;
     }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
+    }
+
     public void adicionaTurma() {
-        quantidadeDeTurmas ++;
+        quantidadeDeTurmas++;
     }
 }

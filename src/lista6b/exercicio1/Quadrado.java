@@ -7,16 +7,16 @@ public class Quadrado extends FiguraGeometrica {
         this.ladoDoQuadrado = 0;
     }
 
+    @Override
+    public void area() {
+        setAreaFigura(ladoDoQuadrado * ladoDoQuadrado);
+    }
+
     public double getLadoDoQuadrado() {
         return ladoDoQuadrado;
     }
 
     public void setLadoDoQuadrado(double ladoDoQuadrado) {
         this.ladoDoQuadrado = ladoDoQuadrado;
-    }
-
-    @Override
-    public void area() {
-setAreaFigura(ladoDoQuadrado * ladoDoQuadrado);
     }
 }

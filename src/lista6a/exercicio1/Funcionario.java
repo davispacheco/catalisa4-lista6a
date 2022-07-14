@@ -15,6 +15,12 @@ public abstract class Funcionario implements Universidade {
         this.salario = 0;
     }
 
+    public abstract void aumentoSalario() {
+        double percentual = 0.1;
+        double reajuste = salario * percentual;
+        salario += reajuste;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -53,11 +59,5 @@ public abstract class Funcionario implements Universidade {
 
     public void setSalario(double salario) {
         this.salario = salario;
-    }
-
-    public abstract void aumentoSalario() {
-        double percentual = 0.1;
-        double reajuste = salario * percentual;
-        salario += reajuste;
     }
 }

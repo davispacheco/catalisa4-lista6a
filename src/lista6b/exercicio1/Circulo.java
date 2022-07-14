@@ -9,6 +9,10 @@ public class Circulo extends FiguraGeometrica {
         this.raio = 0;
     }
 
+    @Override
+    public void area() {
+        setAreaFigura(pi * raio * raio);
+    }
     public double getPi() {
         return pi;
     }
@@ -23,10 +27,5 @@ public class Circulo extends FiguraGeometrica {
 
     public void setRaio(double raio) {
         this.raio = raio;
-    }
-
-    @Override
-    public void area() {
-        setAreaFigura(pi * raio * raio);
     }
 }

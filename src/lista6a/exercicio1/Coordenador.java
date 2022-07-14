@@ -7,13 +7,6 @@ public class Coordenador extends Funcionario {
         this.professoresSupervisionados = 0;
     }
 
-    public int getProfessoresSupervisionados() {
-        return professoresSupervisionados;
-    }
-
-    public void setProfessoresSupervisionados(int professoresSupervisionados) {
-        this.professoresSupervisionados = professoresSupervisionados;
-    }
 
     @Override
     public void aumentoSalario() {
@@ -29,4 +22,13 @@ public class Coordenador extends Funcionario {
             professoresSupervisionados++;
         }
     }
+
+    public int getProfessoresSupervisionados() {
+        return professoresSupervisionados;
+    }
+
+    public void setProfessoresSupervisionados(int professoresSupervisionados) {
+        this.professoresSupervisionados = professoresSupervisionados;
+    }
+
 }

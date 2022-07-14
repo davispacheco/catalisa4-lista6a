@@ -9,6 +9,11 @@ public class Retangulo extends FiguraGeometrica {
         this.alturaDoRetangulo = 0;
     }
 
+    @Override
+    public void area() {
+        setAreaFigura(baseDoRetangulo * alturaDoRetangulo);
+    }
+
     public double getBaseDoRetangulo() {
         return baseDoRetangulo;
     }
@@ -23,10 +28,5 @@ public class Retangulo extends FiguraGeometrica {
 
     public void setAlturaDoRetangulo(double alturaDoRetangulo) {
         this.alturaDoRetangulo = alturaDoRetangulo;
-    }
-
-    @Override
-    public void area() {
-setAreaFigura(baseDoRetangulo * alturaDoRetangulo);
     }
 }

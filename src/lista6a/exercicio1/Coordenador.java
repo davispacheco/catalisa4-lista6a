@@ -30,5 +30,4 @@ public class Coordenador extends Funcionario {
     public void setProfessoresSupervisionados(int professoresSupervisionados) {
         this.professoresSupervisionados = professoresSupervisionados;
     }
-
 }

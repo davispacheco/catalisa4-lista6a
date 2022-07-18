@@ -5,10 +5,10 @@ public class Retangulo implements FiguraGeometrica {
     private double alturaDoRetangulo;
     private double areaRetangulo;
 
-    public Retangulo() {
-        this.baseDoRetangulo = 0;
-        this.alturaDoRetangulo = 0;
-        this.areaRetangulo = 0;
+    public Retangulo(double baseDoRetangulo, double alturaDoRetangulo) {
+        this.baseDoRetangulo = baseDoRetangulo;
+        this.alturaDoRetangulo = alturaDoRetangulo;
+        this.areaRetangulo = getAreaRetangulo();
     }
 
     public double getBaseDoRetangulo() {
@@ -36,7 +36,7 @@ public class Retangulo implements FiguraGeometrica {
     }
 
     @Override
-    public void calculoArea() {
+    public void calcularArea() {
         areaRetangulo = baseDoRetangulo * alturaDoRetangulo;
     }
 }

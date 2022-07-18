@@ -4,9 +4,9 @@ public class Quadrado implements FiguraGeometrica {
     private double ladoDoQuadrado;
     private double areaQuadrado;
 
-    public Quadrado() {
-        this.ladoDoQuadrado = 0;
-        this.areaQuadrado = 0;
+    public Quadrado(double ladoDoQuadrado) {
+        this.ladoDoQuadrado = ladoDoQuadrado;
+        this.areaQuadrado = getAreaQuadrado();
     }
 
     public double getLadoDoQuadrado() {
@@ -26,7 +26,7 @@ public class Quadrado implements FiguraGeometrica {
     }
 
     @Override
-    public void calculoArea() {
+    public void calcularArea() {
         areaQuadrado = ladoDoQuadrado * ladoDoQuadrado;
     }
 }

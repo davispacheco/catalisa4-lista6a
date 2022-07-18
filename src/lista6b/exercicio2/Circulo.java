@@ -5,10 +5,10 @@ public class Circulo implements FiguraGeometrica {
     private double raio;
     private double areaCirculo;
 
-    public Circulo() {
+    public Circulo(double raio) {
         this.pi = 3.14;
-        this.raio = 0;
-        this.areaCirculo = 0;
+        this.raio = raio;
+        this.areaCirculo = getAreaCirculo();
     }
 
     public double getPi() {
@@ -36,7 +36,7 @@ public class Circulo implements FiguraGeometrica {
     }
 
     @Override
-    public void calculoArea() {
+    public void calcularArea() {
         areaCirculo = pi * raio * raio;
     }
 }

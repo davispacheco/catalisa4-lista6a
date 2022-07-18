@@ -15,7 +15,7 @@ public abstract class Funcionario implements Universidade {
         this.salario = 0;
     }
 
-    public abstract void aumentoSalario() {
+    public void aumentoSalario() {
         double percentual = 0.1;
         double reajuste = salario * percentual;
         salario += reajuste;

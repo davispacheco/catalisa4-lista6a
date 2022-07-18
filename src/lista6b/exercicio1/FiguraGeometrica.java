@@ -7,7 +7,7 @@ public abstract class FiguraGeometrica {
         this.areaFigura = areaFigura;
     }
 
-    public abstract void area();
+    public abstract void calcularArea();
 
     public double getAreaFigura() {
         return areaFigura;

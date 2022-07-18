@@ -4,13 +4,13 @@ public class Circulo extends FiguraGeometrica {
     private double pi;
     private double raio;
 
-    public Circulo() {
+    public Circulo(double raio) {
         this.pi = 3.14;
-        this.raio = 0;
+        this.raio = raio;
     }
 
     @Override
-    public void area() {
+    public void calcularArea() {
         setAreaFigura(pi * raio * raio);
     }
     public double getPi() {

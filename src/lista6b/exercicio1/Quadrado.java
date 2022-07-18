@@ -3,12 +3,12 @@ package src.lista6b.exercicio1;
 public class Quadrado extends FiguraGeometrica {
     private double ladoDoQuadrado;
 
-    public Quadrado() {
-        this.ladoDoQuadrado = 0;
+    public Quadrado(double ladoDoQuadrado) {
+        this.ladoDoQuadrado = ladoDoQuadrado;
     }
 
     @Override
-    public void area() {
+    public void calcularArea() {
         setAreaFigura(ladoDoQuadrado * ladoDoQuadrado);
     }
 
